@@ -31,10 +31,10 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -145,6 +145,7 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
         ),
         'E' => 
         array (
+            'Encore\\Admin\\Media\\' => 19,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
         ),
@@ -432,6 +433,10 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
         array (
             0 => __DIR__ . '/..' . '/facade/flare-client-php/src',
         ),
+        'Encore\\Admin\\Media\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/media-manager/src',
+        ),
         'Encore\\Admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/encore/laravel-admin/src',
@@ -509,9 +514,18 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
     );
 
     public static $classMap = array (
+        'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
+        'App\\Admin\\Controllers\\BodyItemController' => __DIR__ . '/../..' . '/app/Admin/Controllers/BodyItemController.php',
+        'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
+        'App\\Admin\\Controllers\\GeneralController' => __DIR__ . '/../..' . '/app/Admin/Controllers/GeneralController.php',
+        'App\\Admin\\Controllers\\HeadItemController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HeadItemController.php',
+        'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\BodyitemController' => __DIR__ . '/../..' . '/app/Http/Controllers/BodyitemController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\GeneralController' => __DIR__ . '/../..' . '/app/Http/Controllers/GeneralController.php',
+        'App\\Http\\Controllers\\HeaditemController' => __DIR__ . '/../..' . '/app/Http/Controllers/HeaditemController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -521,6 +535,10 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Bodyitem' => __DIR__ . '/../..' . '/app/Models/Bodyitem.php',
+        'App\\Models\\General' => __DIR__ . '/../..' . '/app/Models/General.php',
+        'App\\Models\\Headitem' => __DIR__ . '/../..' . '/app/Models/Headitem.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -1367,6 +1385,10 @@ class ComposerStaticInitf59ff69f4e49f0611a0bc631f6cca9de
         'Encore\\Admin\\Layout\\Column' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Column.php',
         'Encore\\Admin\\Layout\\Content' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Content.php',
         'Encore\\Admin\\Layout\\Row' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Row.php',
+        'Encore\\Admin\\Media\\BootExtension' => __DIR__ . '/..' . '/laravel-admin-ext/media-manager/src/BootExtension.php',
+        'Encore\\Admin\\Media\\MediaController' => __DIR__ . '/..' . '/laravel-admin-ext/media-manager/src/MediaController.php',
+        'Encore\\Admin\\Media\\MediaManager' => __DIR__ . '/..' . '/laravel-admin-ext/media-manager/src/MediaManager.php',
+        'Encore\\Admin\\Media\\MediaServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/media-manager/src/MediaServiceProvider.php',
         'Encore\\Admin\\Middleware\\Authenticate' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Authenticate.php',
         'Encore\\Admin\\Middleware\\Bootstrap' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Bootstrap.php',
         'Encore\\Admin\\Middleware\\LogOperation' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/LogOperation.php',

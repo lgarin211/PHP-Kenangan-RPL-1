@@ -405,11 +405,6 @@ return [
     |
     */
     'extensions' => [
-        'media-manager' => [
-            // Select a local disk that you configured in `config/filesystem.php`
-            'disk' => 'FSP',
-            'allowed_ext' => 'jpg,jpeg,png,pdf,doc,docx,zip,mkv,mp4'
-        ],
 
     ],
 ];
