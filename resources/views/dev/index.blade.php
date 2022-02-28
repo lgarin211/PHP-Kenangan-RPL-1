@@ -46,8 +46,8 @@ $CoreIndex=$data['data2']['CoreIndex'];
                                 <h2 class="author-name">{{$CoreIndex['gen1']->value3}}</h2>
                             </div>
                             <div class="video-button">
-                                <a href="{{url('/galery')}}" class="button style-1">view projects</a>
-                                <a href="{{url('/contac')}}" class="button style-2">hire us now</a>
+                                <a href="{{url('/galery')}}" class="button style-1">albume</a>
+                                <!-- <a href="{{url('/contac')}}" class="button style-2">hire us now</a> -->
                             </div>
                         </div>
                     </div>
